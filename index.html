@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <style>
+    
+    body{
+        width: 550px;
+        margin: auto;
+    }
+
+    h1{
+        border-bottom: 1px solid black;
+    }
+
+    #message{
+        font-size: 18pt;
+    }
+
+    .square{
+        height: 80px;
+        width: 80px;
+        font-size: 40pt;
+        text-align: center;
+    }
+
+    
+    
+    </style>
+</head>
+<body onLoad="startGame();">
+        <h1>Tic Tac Toe</h1>
+        <div id="message">Messages here</div>
+        <table border="1">
+            <tr>
+                <td class="square" id="s1"onClick="nextMove(this)"></td>
+                <td class="square" id="s2" onClick="nextMove(this)"></td>
+                <td class="square" id="s3" onClick="nextMove(this)"></td>
+            </tr>
+            <tr>
+                <td class="square" id="s4" onClick="nextMove(this)"></td>
+                <td class="square" id="s5" onClick="nextMove(this)"></td>
+                <td class="square" id="s6" onClick="nextMove(this)"></td>
+            </tr>
+            <tr>
+                <td class="square" id="s7" onClick="nextMove(this)"></td>
+                <td class="square" id="s8" onClick="nextMove(this)"></td>
+                <td class="square" id="s9" onClick="nextMove(this)"></td>
+            </tr>
+        </table>
+    <a href="javascript: startGame();" id="restart">Start Over</a>  
+    <script src="index.js"></script>
+</body>
+
+
+
+
+
+
+</html>
