@@ -1,0 +1,29 @@
+body, html{
+    width: 550px;
+    margin: auto;
+    background-image: url("http://s2.postimg.org/l1yibefa1/playforfun.jpg");
+    background-size: 100%;
+    text-align: center;
+}
+
+h1{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#message{
+    font-size: 18pt;
+    text-align: center;
+}
+
+
+.square{
+    height: 80px;
+    width: 80px;
+    font-size: 40pt;
+    text-align: center;
+}
+
+.spacer{
+    padding: 1%;
+}
