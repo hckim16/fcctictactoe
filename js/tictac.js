@@ -6,6 +6,9 @@ $(document).ready(function(){
     $('#msg').hide();
 
     var player = 1;
+    var random = Math.floor(Math.random() * 9) + 1;
+    var rand = Math.floor(Math.random() * 9) + 1;
+    var tag = ".sq" + rand.toString();
 
     $('#twoplayer').click(function(){
 
@@ -147,7 +150,7 @@ $(document).ready(function(){
                         }
                     }
                     else{
-                        squareSelected.addClass('fa fa-circle-o');
+                        $(randomSquare(random)).addClass('fa fa-circle-o');
                         if(checkIfPlayerWon('fa fa-circle-o')){
                             alert('Oh no! The Computer won!');
                             $('#replay').click(function(){
@@ -169,6 +172,14 @@ $(document).ready(function(){
     $('#replay').click(function(){
         location.reload();
     });
+
+    function randomSquare(rand){
+        while($(tag).hasClass('fa fa-times') || $(tag).hasClass('fa fa-circle-o')){
+            rand = Math.floor(Math.random() * 9) + 1;
+            tag = ".sq" + rand.toString();
+        }
+        return tag;
+    }
 
     function checkIfPlayerWon(symbol){
 
