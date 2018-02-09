@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+}
+
+#gameboard{
+    width: 364px;
+    height: 364px;
+    margin: auto;
+    margin-left: 51px;
+}
+
+.spacer{
+    padding: 1%;
+  }
+
+.block{
+    background-color: rgba(75, 66, 66, 0.8);
+    color: white;
+    width: 37.5%;
+    margin: auto;
+    opacity: .75;
+    border-radius: 15px;
+    font-size: 1.5em;
+    padding: 3%;
+}
+
+.row{
+    clear: both;
+    overflow: hidden;
+}
+
+.square{
+    width: 120px;
+    height: 105px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    font-size: 75px;
+    padding-top:15px
+}
+
+.bottom{
+    border-bottom: 2px solid black;
+}
+
+.right{
+    border-right: 2px solid black
+}
+
